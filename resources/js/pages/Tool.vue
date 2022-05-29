@@ -1,5 +1,5 @@
 <template>
-  <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 ">
+  <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
     <GridItem
         v-for="user in users"
         :key="user.id"
