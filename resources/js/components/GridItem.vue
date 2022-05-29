@@ -17,6 +17,7 @@ const props = defineProps(["name", "email", "role", "phoneNumber"]);
           <p>
             {{ name }}
             <span
+              v-if="role"
               class='ml-4 px-2 rounded-full bg-green-200 font-bold text-green-700'
               :class="{ 'bg-red-200': role == 'admin', 'text-red-700': role == 'admin' }"
             >
