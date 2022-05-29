@@ -1,8 +1,8 @@
 <?php
 
-use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Limasoft\GridLists\Http\Controllers\GridListsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/users', function (Request $request) {
-    return User::all();
-});
+Route::get('/users', [GridListsController::class, 'index']);
