@@ -9,6 +9,13 @@ use Laravel\Nova\Tool;
 
 class GridLists extends Tool
 {
+    public static $modelResource;
+
+    function __construct($resources = null)
+    {
+        Self::$modelResource = $resources;
+    }
+
     /**
      * Perform any tasks that need to happen when the tool is booted.
      *
